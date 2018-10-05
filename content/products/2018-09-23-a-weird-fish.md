@@ -2,7 +2,7 @@
 title: a weird cup
 status: Published
 date: '2018-09-23'
-price: '35.99'
+price: '69.99'
 stock: '4'
 primaryImage: /images/uploads/35428162_248595259055578_8676305336350539776_n.jpg
 briefDescription: handmade puppy cup
