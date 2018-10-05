@@ -63,37 +63,7 @@ const Cart = () =>
         <div className='Cart-Item-Price'>${item.price*item.quantity}</div>
       </div>
     )} 
-    <div 
-      className='Cart-Footer-Total'
-      onClick={()=>{
-        fetch("/.netlify/functions/stock", {
-          method: "POST",
-          body: JSON.stringify({"x":10,"y":100,"z":1000})
-        }).then(response => {
-          response.json().then(data => {
-            const context = JSON.parse(data.context)
-            const {url,token} = context.clientContext.identity
-            console.log(url + ' ' + token)
-            fetch(url,{
-              method:"POST",
-              headers: {
-                'Authorization': `Bearer ${token}`
-              } 
-            }).then(response => {
-              response.json().then(data => {
-                console.log(JSON.stringify(data))
-              })})
-            // console.log(data.contextString)
-            // if(data.status=='succeeded'){
-            //   alert(`payment was successful`);
-            //   submit(encodeData(token))
-            // }
-          });
-        })
-        console.log('click')
-      }}  
-    >test me where am i
-    </div>
+  
     <div className='Cart-Footer'>
       <div className='Cart-Footer-Total'>
         TOTAL : ${State.getTotal()}
