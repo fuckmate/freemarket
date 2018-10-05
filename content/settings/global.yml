@@ -1,8 +1,6 @@
-siteTitle: Fish Store
+siteTitle: leigh mcdonald online store
 siteUrl: 'https://netlify-cms-react-starter.netlify.com'
-siteDescription: >-
-  A starter project for creating lightning-fast, offline-first websites with
-  Netlify CMS and React.
+siteDescription: ''
 socialMediaCard:
   image: /images/uploads/card-og.png
   twitterCreatorAccount: '@Jinksi'
